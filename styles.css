@@ -1,0 +1,241 @@
+/*|///////////////////////////////////////header: contenido de cabecera////////////////////////////////////////////|*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: white;
+}
+#navbar-pinterest{
+    display:flex;
+    position: relative;
+    height: 72px;
+    width: 100%;
+    padding: 4px 0px 4px 16px;
+    align-items: center;
+}
+.header-logo{
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+}
+#pinterest-icon{
+    padding: 12px;  
+}
+#pinterest-icon:hover{
+    background-color: #e9e9e9;
+    border-radius: 50%;
+    }
+.buttons{
+    height: 56px;
+    width: auto;
+    display:inline-flex;  
+    align-items: center;    
+}
+#navbar-pinterest button{
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color  Emoji,Segoe UI Emoji,Segoe UI Symbol;  
+}
+.button-init{
+    width: auto;
+    height: 48px;
+    border-radius: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.button-init-cont{
+    color: white;
+}
+.button-today{
+    width: auto;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: center;
+}
+.button-create{
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline-flex;
+}
+.button-selector-icon{
+    margin-left: 8px;
+}
+.button-search{
+    width: 100%;
+    min-width: 407px;
+    margin: 0 8px 0 8px ;
+    display: inline-flex;
+    border-radius: 24px;
+    align-items: center;  
+    position: relative;  
+    background-color: #e9e9e9; 
+}
+.button-search:hover{
+    background-color: #e2e2e2;
+}
+@media(max-width: 660px){
+    .button-search{
+        background-color: white; 
+    }
+    .button-search:hover{
+        background-color: white;
+    }
+    #content{
+        column-count: 2;
+        column-width: 236px;    
+    }
+}
+.finder-container{
+    height: 48px;
+    width: 100%;
+    padding: 0px 8px 0px 16px;
+}
+.finder{
+    left: 18px;
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    padding: 0px 8px 0px 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;   
+}
+.finder-icon-search{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.finder-container ::placeholder{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color  Emoji,Segoe UI Emoji,Segoe UI Symbol;  
+    font-size: 16px;
+}
+.multiple-icons{
+    width: 192px;
+    align-items:center; 
+    height: 56px;
+    display:inline-flex;       
+}
+.multiple-icons div{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.multiple-icons svg{
+    padding: 12px;
+}
+.multiple-icons div:hover{
+background-color: #e9e9e9;
+}
+.photo{
+    padding: 12px;
+    border-radius: 50%;
+}
+#selector-icon{
+    padding: 6px 6px 6px 6px;
+    margin: 12px 12px 12px 0px;
+}
+#options{
+    background-color: white;
+}
+#selector-icon:hover{
+    background-color: #e9e9e9;
+    border-radius: 50%;
+}
+/*|///////////////////////////////////////main: contenido de imagenes////////////////////////////////////////////|*/
+#content{
+    padding: 80px 25px 0 25px;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: auto;
+    column-width: 236px;    
+}
+.card-image{
+    position: relative;
+    margin: 0 0 16px 0;
+    padding: 0px 8px 0px 8px;
+    height: auto;
+    width: 236px;    
+ }
+.card-image img{
+    width: 236px;
+    height: auto;
+    border-radius: 16px;
+}
+.card-image:hover .save{
+    opacity: 1;
+}
+.card-image:hover .share{
+    opacity: 1;
+}
+.card-image:hover .options{
+    opacity: 1;
+}
+.save{
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    height: 50px;
+    width: 92px;        
+    background-color:#e60023;
+    border-radius: 24px;
+    color:white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+.save:hover{
+    background-color: rgb(150, 5, 5);
+}
+.share{
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+    margin: 0;
+    padding: 0;
+    height: 34px;
+    width: 34px;        
+    background-color:#e9e9e9;
+    border-radius: 17px;
+    color:black;
+    border: none;
+    opacity: 0;
+}
+.share:hover{
+    background-color:#ffffff;
+}
+.options{
+    position: absolute;
+    bottom: 15px;
+    right: 60px;
+    margin: 0;
+    padding: 0;
+    height: 34px;
+    width: 34px;        
+    background-color:#e9e9e9;
+    border-radius: 17px;
+    color:black;
+    border: none;
+    opacity: 0;
+}
+.options:hover{
+    background-color:#ffffff;
+}
+.gUZ:hover{
+    background-color:red;
+}
